@@ -36,13 +36,11 @@ public class CustomListTest {
     }
 
     @Test
-    public void hasCityTest() {
+    public void hasCityTest(){
+        list = MockCityList();
+        City city = new City("Edmonton","AB");
 
+        assertTrue(list.hasCity(city));
     }
-
-
-
-
-
 
 }
